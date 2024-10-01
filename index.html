@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignCraft Studio - Web Design Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for demonstration */
+        .hero-cta {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .hero-cta:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DesignCraft Studio</div>
+            <button id="mobile-menu" aria-label="Toggle Menu">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="">More</option>
+                        <option value="#about">About Us</option>
+                        <option value="#testimonial">Testimonials</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="fade-in">
+            <h1>Welcome to DesignCraft Studio</h1>
+            <p>Crafting Digital Experiences That Inspire</p>
+            <a href="contact.html" class="hero-cta">Get Started</a>
+        </section>
+
+        <section id="services" class="fade-in">
+            <h2>Our Services</h2>
+            <ul id="service-list">
+                <!-- This list will be populated by JavaScript -->
+            </ul>
+        </section>
+
+        <section id="portfolio" class="fade-in">
+            <h2>Featured Work</h2>
+            <div class="portfolio-grid">
+                <img src="placeholder1.jpg" alt="Project 1">
+                <img src="placeholder2.jpg" alt="Project 2">
+                <img src="placeholder3.jpg" alt="Project 3">
+            </div>
+            <a href="portfolio.html" class="cta">View All Projects</a>
+        </section>
+
+        <section id="about" class="fade-in">
+            <h2>About DesignCraft Studio</h2>
+            <p>We are a team of passionate designers and developers dedicated to creating beautiful, functional websites that help businesses thrive in the digital world.</p>
+        </section>
+
+        <section id="testimonial" class="fade-in">
+            <h2>What Our Clients Say</h2>
+            <blockquote>
+                "DesignCraft Studio transformed our online presence. Their creativity and technical expertise are unmatched!"
+            </blockquote>
+            - Jane Doe, Happy Client
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DesignCraft Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
